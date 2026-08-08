@@ -1,8 +1,18 @@
 aid: biolinq
 name: Biolinq
-description: 'Biolinq is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Biolinq Incorporated is a San Diego, California medical device and digital
+  health company founded in 2012 that develops intradermal biowearable sensors. Its
+  lead product, Biolinq Shine, is an autonomous needle-free continuous glucose sensor
+  built on an array of electrochemical microsensors that sit just below the surface
+  of the skin, combined with an accelerometer and an ambient light sensor so a single
+  wearable measures glucose alongside activity and sleep. The sensor carries an on-body
+  LED color indicator for time-in-range and pairs with a companion mobile application
+  for trends and insights. The FDA granted Biolinq Shine De Novo classification for
+  adults with type 2 diabetes not on insulin therapy, with a planned US market launch.
+  Biolinq publishes no public developer program, API documentation, or machine-readable
+  API contract; its public web presence is a corporate marketing site.'
 url: https://raw.githubusercontent.com/api-evangelist/biolinq/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/6310feecd52f6e2e081df17e/633c9a9b7cdf016ec08ae0d3_biolinq-logo-white%203.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +22,13 @@ created: '2026-08-07'
 modified: '2026-08-07'
 tags:
 - Company
+- Health
+- Digital Health
+- Medical Devices
+- Wearables
+- Biosensors
+- Continuous Glucose Monitoring
+- Diabetes
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,47 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/biolinq-domain-security.yml
 - type: Website
+  url: https://www.biolinq.com/
+- type: Blog
+  url: https://www.biolinq.com/biolinq-news
+- type: PrivacyPolicy
+  url: https://cdn.prod.website-files.com/6310feecd52f6e2e081df17e/63767368eaae7f190195aea9_Biolinq-June-2022-Privacy-Policy.pdf
+- type: Contact
+  url: https://www.biolinq.com/biolinq-contact
+- type: Technology
+  url: https://www.biolinq.com/technology
+- type: Careers
+  url: https://www.biolinq.com/biolinq-careers
+- type: Team
+  url: https://www.biolinq.com/biolinq-team
+- type: LinkedIn
+  url: https://www.linkedin.com/company/biolinq/
+- type: SecondaryMarket
   url: https://forgeglobal.com/biolinq_stock/
+x-enrichment:
+  date: '2026-08-07'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Biolinq ships the Shine biosensor and a companion consumer mobile app only
+    — its entire public web presence is an 11-page Webflow marketing site whose /support
+    page reads "Intentionally left blank", and api/developer/docs/app.biolinq.com all
+    fail to resolve in DNS.
+  evidence:
+  - url: https://www.biolinq.com/support
+    status: 200
+  - url: https://www.biolinq.com/openapi.json
+    status: 404
+  - url: https://www.biolinq.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.biolinq.com/llms.txt
+    status: 404
+  - url: https://api.biolinq.com/
+    status: 0
+  checked: '2026-08-07'
