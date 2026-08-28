@@ -12,6 +12,17 @@ description: 'Biolinq Incorporated is a San Diego, California medical device and
   Biolinq publishes no public developer program, API documentation, or machine-readable
   API contract; its public web presence is a corporate marketing site.'
 url: https://raw.githubusercontent.com/api-evangelist/biolinq/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6310feecd52f6e2e081df17e/633c9a9b7cdf016ec08ae0d3_biolinq-logo-white%203.png
 x-type: company
 x-source: harvest:secondary-market
