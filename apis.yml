@@ -23,6 +23,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/6310feecd52f6e2e081df17e/633c9a9b7cdf016ec08ae0d3_biolinq-logo-white%203.png
 x-type: company
 x-source: harvest:secondary-market
